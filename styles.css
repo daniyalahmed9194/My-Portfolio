@@ -1,0 +1,46 @@
+.profile {
+    border-radius: 5%;
+}
+
+.project-img {
+    border-radius: 5%;
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #e5e5e5 !important;
+    color: #fff !important;
+}
+
+h2 {
+    color: #000 !important;
+}
+p {
+    color: #14213D !important;
+}
+
+#Navbar {
+    background-color: #FCA311;
+}
+
+.col {
+    background-color: #FCA311 !important;
+}
+
+.btn {
+    background-color: #14213D !important;
+    color: #fff !important;
+}
+
+.footeritem {
+    color: #14213D !important;
+}
