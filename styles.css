@@ -29,7 +29,7 @@ p {
 }
 
 #Navbar {
-    background-color: #FCA311;
+    background-color: #FCA311 !important;
 }
 
 .col {
