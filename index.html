@@ -11,28 +11,38 @@
 <body>
     <!-- Nav Bar  -->
      <section id="Navbar">
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <span class="fs-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
-                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
-                      </svg>
-                    Portfolio</span>
-              </a>
-        
-              <ul class="nav navbar-dark nav-pills">
-                <li class="nav-item"><a href="#About" class="nav-link active bg-dark" aria-current="page">About</a></li>
-                <li class="nav-item"><a href="#Skills" class="nav-link text-dark">Skills</a></li>
-                <li class="nav-item"><a href="#Projects" class="nav-link text-dark">Projects</a></li>
-                <li class="nav-item"><a href="#Contact" class="nav-link text-dark">Contact</a></li>
-                
-              </ul>
-            </header>
-          </div>
-     </section>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+          </svg>
+          Portfolio
+        </span>
+      </a>
+
+      <!-- Toggler for small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#About" class="nav-link active">About</a></li>
+          <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
     <!-- About Section  -->
     <section id="About">
         <div class="container col-xxl-8 px-4 py-5">
@@ -101,84 +111,66 @@
     
     <hr class="featurette-divider">
     <!-- Contact Section  -->
-     <section id="Contact">
-        <div class="container">
-            <div class="row mb-5 mt-4">
-                <div class="col-12">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact</h1>
-                </div>
-            </div>
-            <div class="row mb-5 mt-4">
-                <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-                    <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 disabled" aria-current="true">
-                        <img src="./person-circle.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0">Name</h6>
-                            
-                          </div>
-                          <small class="opacity-50 text-nowrap">Abdur Rahman Daniyal</small>
-                        </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 disabled" aria-current="true">
-                        <img src="./envelope-at.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0 pe-5">Email</h6>
-                            
-                          </div>
-                          <small class="opacity-50 text-nowrap ms-5 ps-5" >rehmanahm0987@gmail.com</small>
-                        </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 disabled" aria-current="true">
-                        <img src="./phone.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0">Phone Number</h6>
-                           
-                          </div>
-                          <small class="opacity-50 text-nowrap ml-5">03134139194</small>
-                        </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 disabled" aria-current="true">
-                        <img src="./globe.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0">Nationality</h6>
-                   
-                          </div>
-                          <small class="opacity-50 text-nowrap ms-5">Pakistani</small>
-                        </div>
-                      </a>
-                      
-                      <a href="https://github.com/daniyalahmed9194" class="list-group-item list-group-item-action d-flex gap-3 py-3 col" aria-current="true">
-                        <img src="./github.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0">GitHub</h6>
-                   
-                          </div>
-                          <small class="opacity-50 text-nowrap ms-5">Click </small>
-                        </div>
-                      </a>
-                      <a href="https://www.linkedin.com/in/abdur-rehman-daniyal/" class="list-group-item list-group-item-action d-flex gap-3 py-3 col" aria-current="true">
-                        <img src="./linkedin.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                          <div>
-                            <h6 class="mb-0">LinkedIn</h6>
-                   
-                          </div>
-                          <small class="opacity-50 text-nowrap ms-5">Click</small>
-                        </div>
-                      </a>
-                    </div>
-                  
-                  </div>
-            </div>
+    <section id="Contact">
+
+      <div class="container">
+        <div class="row mb-5 mt-4">
+          <div class="col-12">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact</h1>
+          </div>
         </div>
         
-     </section>
+        <div class="row" style="max-width: 500p;">
+          <div class="d-flex flex-column gap-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled">
+                <img src="./person-circle.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">Name</h6>
+                  <small class="opacity-50 text-nowrap">Abdur Rahman Daniyal</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled">
+                <img src="./envelope-at.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">Email</h6>
+                  <small class="opacity-50 text-wrap">rehmanahm0987@gmail.com</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled">
+                <img src="./phone.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">Phone Number</h6>
+                  <small class="opacity-50 text-nowrap">03134139194</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled">
+                <img src="./globe.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">Nationality</h6>
+                  <small class="opacity-50 text-nowrap">Pakistani</small>
+                </div>
+              </a>
+              <a href="https://github.com/daniyalahmed9194" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 col">
+                <img src="./github.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">GitHub</h6>
+                  <small class="opacity-50 text-nowrap">Click</small>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/abdur-rehman-daniyal/" class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 col">
+                <img src="./linkedin.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0 img-fluid">
+                <div class="d-flex flex-column flex-md-row justify-content-between w-100">
+                  <h6 class="mb-0">LinkedIn</h6>
+                  <small class="opacity-50 text-nowrap">Click</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Footer  -->
     <hr class="featurette-divider text-body-emphasis">
      <section id="Footer">
